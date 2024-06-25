@@ -141,6 +141,12 @@ body > section{
     display: block;
 }
 
+hr{
+    height: 3px;
+    border: none;
+    background-color: #4F6F52;
+}
+
 footer{
     background-color: var(--primaryColor);
     display: flex;
@@ -195,6 +201,11 @@ footer{
         min-width: 330px;
         width: 80%;
         border-radius: 20px;
+    }
+
+    header > div{
+        padding-right: 0;
+        gap: 12%;
     }
 
     }
