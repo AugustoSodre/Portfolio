@@ -125,8 +125,6 @@ body > section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
     gap: 10%;
 }
 
@@ -192,13 +190,12 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
         gap: 20px;
     }
     .imgShowcase{
         max-width: 100%;
-        min-width: 330px;
+        min-width: 320px;
+        min-height: 190px;
         width: 80%;
         border-radius: 20px;
     }
