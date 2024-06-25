@@ -113,7 +113,7 @@ body > section{
 .imgShowcase{
     max-width: 100%;
     min-width: 320px;
-    min-height: 400px;
+    min-height: 250px;
     width: 40%;
     border-radius: 20px;
     margin: 20px;
