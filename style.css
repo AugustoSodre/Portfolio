@@ -146,7 +146,7 @@ body > section{
 .projectsImgShowcase{
     max-width: 100%;
     min-width: 300px;
-    min-height: 200px;
+    /*min-height: 200px;*/
     width: 70%;
     border-radius: 20px;
     margin: 20px;
