@@ -65,36 +65,58 @@ body > section{
 }
 
 .bodyImg{
-    max-width: 100%;
+    max-width: 70%;
+    width: 70%;
     border-radius: 20px;
-    margin-bottom: 15px;
 }
 
-.imgDiv{
+.imgDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
+}
 
+.imgDiv > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 .imgDiv:hover {
     transform: scale(1.05);
-    filter: blur(0.2px);
   }
+
+.imgDiv >a >img:hover {
+    filter: blur(0.5px);
+  }
+
+.hideOnMobile{
+    display: block;
+}
 
 footer{
     background-color: var(--primaryColor);
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
     body > section {
       flex-direction: column;
+      gap: 20px;
     }
   
     .imgDiv {
       margin-bottom: 20px;
+    }
+
+    .hideOnMobile{
+        display: none;
     }
   }
   
@@ -102,3 +124,8 @@ footer{
     background-color: rgba(255, 255, 255, 0.2); /* Add subtle background on hover */
     cursor: pointer;
   }
+
+  
+
+
+  
