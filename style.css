@@ -112,8 +112,11 @@ body > section{
 
 .imgShowcase{
     max-width: 100%;
+    min-width: 320px;
+    min-height: 400px;
     width: 40%;
     border-radius: 20px;
+    margin: 20px;
 }
 
 .imgShowcase:hover{
@@ -123,9 +126,8 @@ body > section{
 .imgShowcaseDiv{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10%;
 }
 
 .imgShowcaseSection{
@@ -134,6 +136,25 @@ body > section{
     padding-top: 5px;
 }
 
+.projectsShowcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsImgShowcase{
+    max-width: 100%;
+    min-width: 300px;
+    min-height: 200px;
+    width: 70%;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.projectsImgShowcase:hover{
+    transform:scale(1.05);
+}
 
 .hideOnMobile{
     display: block;
@@ -160,10 +181,28 @@ footer{
     padding: 10px;
 }
 
+h1{
+    padding: 20px;
+}
+
 .headerBTN:hover {
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
   }
+
+  .socialMediaSection{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5EFE6;
+    padding: 20px;
+    align-items: center;
+  }
+
+.socialMediaDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 @media only screen and (max-width: 950px) {
     body > section {
