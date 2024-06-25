@@ -68,7 +68,7 @@ body > section{
 
 .bodyImg{
     max-width: 70%;
-    width: 70%;
+    width: 80%;
     border-radius: 20px;
 }
 
@@ -98,6 +98,32 @@ body > section{
     filter: blur(0.5px);
   }
 
+.imgShowcase{
+    max-width: 100%;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.imgShowcase:hover{
+    transform: scale(1.1);
+}
+
+.imgShowcaseDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    gap: 10%;
+}
+
+.imgShowcaseSection{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .hideOnMobile{
     display: block;
 }
@@ -122,7 +148,7 @@ footer > div{
     cursor: pointer;
   }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
     body > section {
       flex-direction: column;
       gap: 20px;
@@ -138,11 +164,26 @@ footer > div{
 
     .bodyImg{
         max-width: 70%;
-        /*width: 70%;*/
-        min-width: 300px;
+        min-width: 350px;
         border-radius: 20px;
     }
         
+    .imgShowcaseDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+    .imgShowcase{
+        max-width: 100%;
+        min-width: 330px;
+        width: 80%;
+        border-radius: 20px;
+    }
+
     }
 
     .bodyFont{
@@ -156,3 +197,5 @@ footer > div{
         flex-direction: column;
         gap: 15px;
     }
+
+    
