@@ -66,6 +66,18 @@ body > section{
     gap: 15px;
 }
 
+.titleFont{
+    font-size: xx-large;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: #0b1b12;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .bodyImg{
     max-width: 70%;
     width: 80%;
@@ -121,6 +133,7 @@ body > section{
 .imgShowcaseSection{
     display: flex;
     flex-direction: column;
+    padding-top: 5px;
 }
 
 
@@ -136,7 +149,7 @@ footer{
     padding: 20px;
 }
 
-footer > div{
+.footerDiv{
     display: flex;
     align-items: center;
     gap: 40px;
@@ -144,7 +157,7 @@ footer > div{
 }
 
 .headerBTN:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Add subtle background on hover */
+    background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
   }
 
