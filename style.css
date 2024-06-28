@@ -46,10 +46,18 @@ body{
     background-color: #E8DFCA;
 }
 
-body > section{
+.indexSection{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.aboutSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: row;
     padding: 40px;
 }
@@ -79,9 +87,13 @@ body > section{
 }
 
 .bodyImg{
-    max-width: 70%;
-    width: 80%;
-    border-radius: 20px;
+    max-width: 90%;
+    border-radius: 30px;
+    border: 5px solid transparent;
+}
+
+.bodyImg:hover{
+    transform: scale(1.05);
 }
 
 .imgDiv {
@@ -91,6 +103,7 @@ body > section{
     align-items: center;
     margin-bottom: 20px;
     padding: 0;
+    gap: 20px;
 }
 
 .imgDiv > a {
@@ -102,13 +115,10 @@ body > section{
     padding: 0;
 }
 
-.imgDiv:hover {
-    transform: scale(1.05);
-  }
-
 .imgDiv >a >img:hover {
     filter: blur(0.5px);
   }
+
 
 .imgShowcase{
     max-width: 100%;
@@ -128,6 +138,15 @@ body > section{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 40px;
+}
+
+.indexImgShowcaseDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
 }
 
 .imgShowcaseSection{
@@ -149,7 +168,6 @@ body > section{
     min-height: 200px;
     width: 70%;
     border-radius: 20px;
-    margin: 20px;
 }
 
 .projectsImgShowcase:hover{
@@ -204,11 +222,40 @@ h1{
     gap: 10px;
 }
 
+.anchor{
+    transition: 0.5ms;
+    color: var(--primaryColor);
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 20px;
+    margin-top: 15px;
+}
+
+.anchor:hover{
+    transition: 0.5ms;
+    color: #729975;
+    text-decoration: none;
+}
+
+.anchor:focus{
+    transition: 0.5ms;
+    color: #4F6F52;
+}
+
+
+
 @media only screen and (max-width: 950px) {
-    body > section {
+    .indexSection {
       flex-direction: column;
       gap: 20px;
     }
+
+    .aboutSection {
+        flex-direction: column;
+        gap: 20px;
+      }
   
     .imgDiv {
       margin-bottom: 20px;
@@ -231,6 +278,11 @@ h1{
         align-items: center;
         gap: 20px;
     }
+
+    .indexImgShowcaseDiv{
+        gap: 20px;
+    }
+
     .imgShowcase{
         max-width: 100%;
         min-width: 320px;
@@ -238,6 +290,8 @@ h1{
         width: 80%;
         border-radius: 20px;
     }
+
+    
 
     header > div{
         padding-right: 0;
