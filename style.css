@@ -230,7 +230,6 @@ h1{
     font-weight: 600;
     font-style: normal;
     margin: 20px;
-    margin-top: 15px;
 }
 
 .anchor:hover{
@@ -241,7 +240,7 @@ h1{
 
 .anchor:focus{
     transition: 0.5ms;
-    color: #4F6F52;
+    color: #98d29d;
 }
 
 
