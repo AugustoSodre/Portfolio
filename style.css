@@ -224,7 +224,7 @@ h1{
 
 .anchor{
     transition: 0.5ms;
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
     font-size: large;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
