@@ -13,6 +13,7 @@ export const pt = {
     github: 'https://github.com/AugustoSodre',
   },
   langSwitch: { label: 'English', target: 'en' },
+  resume: { label: 'Currículo', href: '/cv/augusto-lima-curriculo.pdf' },
   notFound: {
     title: 'Página não encontrada',
     body: 'Esse endereço não existe.',

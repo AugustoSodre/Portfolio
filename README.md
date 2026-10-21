@@ -31,3 +31,14 @@ plano e tarefas em `specs/`.
 
 All site text lives in `src/app/i18n/pt.ts` and `src/app/i18n/en.ts`. Both share one type, so a
 missing translation fails the build.
+
+## Résumé / Currículo
+
+Sources in `resume/` (HTML). Regenerate the public PDFs in `public/cv/` with headless Chrome:
+
+```bash
+CHROME=/path/to/chrome ./scripts/resume.sh
+```
+
+The public PDFs carry no phone or email. Setting `PRIVATE_CONTACT` and `PRIVATE_DIR` (outside the
+repo) also writes full versions for applications.

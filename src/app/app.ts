@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LangSwitch } from './ui/lang-switch/lang-switch';
+import { TopBar } from './ui/top-bar/top-bar';
 
 @Component({
-  imports: [RouterOutlet, LangSwitch],
+  imports: [RouterOutlet, TopBar],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

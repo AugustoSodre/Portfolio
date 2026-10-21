@@ -29,6 +29,7 @@ export interface SiteContent {
   role: string;
   links: { linkedin: string; github: string };
   langSwitch: { label: string; target: Locale };
+  resume: { label: string; href: string };
   notFound: { title: string; body: string; home: string };
   nav: Record<Section, string>;
   sections: Record<Section, { title: string; description: string }>;

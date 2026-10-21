@@ -13,3 +13,10 @@ describe('site content', () => {
     });
   }
 });
+
+describe('résumé links', () => {
+  it('point to a PDF per locale', () => {
+    expect(CONTENT.pt.resume.href).toBe('/cv/augusto-lima-curriculo.pdf');
+    expect(CONTENT.en.resume.href).toBe('/cv/augusto-lima-resume.pdf');
+  });
+});
