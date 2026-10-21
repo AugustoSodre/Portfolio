@@ -32,8 +32,7 @@ role.
 
 **Acceptance Scenarios**:
 
-1. **Given** AutoMatch, **Then** "my part" says: most of the Angular front end together with Luana
-   Lima, and the initial two-tower engine, rewritten for the final version by Pedro Antonio.
+1. **Given** AutoMatch, **Then** "my part" says: most of the Angular front end, and the initial two-tower engine, rewritten for the final version by Pedro Antonio.
 2. **Given** AutoMatch, **Then** the Team block lists Lucas Moura (most of the back end and the AI
    integration), Ângelo Gaio (back end), Luana Lima (front end), Pedro Antonio (final AI engine),
    Sabrina Vianna (design and docs), Gustavo Fernandes (design), with GitHub links where known.

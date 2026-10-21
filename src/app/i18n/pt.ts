@@ -110,7 +110,7 @@ export const pt = {
       summary:
         'O usuário responde um quiz de 4 etapas no frontend Angular. O backend em Node.js envia o perfil e o catálogo para o motor de IA em PyTorch, que devolve um ranking com percentual de match.',
       myPart: [
-        'Maior parte do frontend em Angular, junto com a Luana Lima.',
+        'Maior parte do frontend em Angular.',
         'Versão inicial do motor de recomendação two-tower em PyTorch; a versão final foi reescrita pelo Pedro Antonio.',
       ],
       limits: [],
