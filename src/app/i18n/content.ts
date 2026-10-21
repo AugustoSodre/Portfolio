@@ -2,6 +2,7 @@ import { inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Locale, isLocale } from './locale';
 import { Section } from '../sections';
+import { ProjectSlug } from '../projects';
 import { pt } from './pt';
 import { en } from './en';
 
@@ -12,6 +13,14 @@ export interface Role {
   mode?: string;
   highlight?: string;
   points: string[];
+}
+
+export interface ProjectText {
+  tagline: string;
+  summary: string;
+  myPart: string[];
+  limits: string[];
+  team: { name: string; role: string; href?: string }[];
 }
 
 export interface SiteContent {
@@ -38,6 +47,17 @@ export interface SiteContent {
     gamesHeading: string;
     games: string;
     gamesLink: { label: string; href: string };
+  };
+  projects: Record<ProjectSlug, ProjectText>;
+  projectsUi: {
+    howItWorks: string;
+    myPart: string;
+    stack: string;
+    links: string;
+    limits: string;
+    team: string;
+    open: string;
+    all: string;
   };
   contact: {
     intro: string;

@@ -7,10 +7,11 @@ import { Menu } from '../../ui/menu/menu';
 import { About } from './about';
 import { Contact } from './contact';
 import { Experience } from './experience';
+import { ProjectsList } from './projects-list';
 
 @Component({
   selector: 'app-section',
-  imports: [Menu, RouterLink, Experience, About, Contact],
+  imports: [Menu, RouterLink, ProjectsList, Experience, About, Contact],
   templateUrl: './section.html',
   styleUrl: './section.css',
   host: { '(document:keydown.escape)': 'back($event)' },

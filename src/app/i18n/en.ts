@@ -91,6 +91,57 @@ export const en = {
     games: 'Before production code there were games. The ones I published are on itch.io.',
     gamesLink: { label: 'See on itch.io', href: 'https://gutoguerreiro.itch.io' },
   },
+  projects: {
+    linketinder: {
+      tagline: 'Recruitment platform that matches candidates and companies by skills.',
+      summary:
+        'Groovy back end with a REST API and a CLI over the same service layer, a normalized PostgreSQL database and a TypeScript SPA.',
+      myPart: [
+        'Solo project: database design, back end and front end.',
+        'Groovy REST API and CLI sharing the same services.',
+        'PostgreSQL with 7 tables and versioned SQL scripts; Spock tests on in-memory H2.',
+        'TypeScript SPA with Chain of Responsibility validation.',
+      ],
+      limits: ['Front end and back end are not integrated yet: they share the domain but run separately.'],
+      team: [],
+    },
+    automatch: {
+      tagline: 'Platform that recommends cars from a short quiz, using a two-tower deep learning model.',
+      summary:
+        'The user answers a 4-step quiz in the Angular front end. The Node.js back end sends the profile and the catalog to the PyTorch AI engine, which returns a ranking with a match percentage.',
+      myPart: [
+        'Most of the Angular front end, together with Luana Lima.',
+        'Initial version of the PyTorch two-tower recommendation engine; Pedro Antonio rewrote it for the final version.',
+      ],
+      limits: [],
+      team: [
+        { name: 'Lucas Moura', role: 'Most of the back end and the AI engine integration', href: 'https://github.com/LucMoura' },
+        { name: 'Ângelo Gaio', role: 'Back end' },
+        { name: 'Luana Lima', role: 'Front end', href: 'https://github.com/luanafvl' },
+        { name: 'Pedro Antonio', role: 'Rewrote the AI engine for the final version', href: 'https://github.com/PedroAntn' },
+        { name: 'Sabrina Vianna', role: 'Design and documentation', href: 'https://github.com/LittleSabs' },
+        { name: 'Gustavo Fernandes', role: 'Design' },
+      ],
+    },
+    'web-crawler': {
+      tagline: 'Groovy crawler that collects public data from ANS, Brazil’s health insurance regulator, about the TISS standard.',
+      summary:
+        'Downloads the latest TISS documentation, exports the version history since Jan 2016 to CSV and downloads the table of submission errors.',
+      myPart: ['Solo project.'],
+      limits: [],
+      team: [],
+    },
+  },
+  projectsUi: {
+    howItWorks: 'How it works',
+    myPart: 'My part',
+    stack: 'Stack',
+    links: 'Repositories',
+    limits: 'Limitations',
+    team: 'Team',
+    open: 'Open project',
+    all: 'All projects',
+  },
   contact: {
     intro: 'The fastest way to reach me is LinkedIn.',
     location: 'Brasília, DF · Brazil',

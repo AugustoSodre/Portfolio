@@ -5,6 +5,9 @@
 </header>
 <h1 #heading tabindex="-1">{{ c.nav[section] }}</h1>
 @switch (section) {
+  @case ('projects') {
+    <app-projects-list [c]="c" [locale]="locale" />
+  }
   @case ('experience') {
     <app-experience [c]="c" />
   }

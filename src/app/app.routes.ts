@@ -4,6 +4,8 @@ import { Home } from './pages/home/home';
 import { NotFound } from './pages/not-found/not-found';
 import { SectionPage } from './pages/section/section';
 import { SECTIONS } from './sections';
+import { ProjectPage } from './pages/project/project';
+import { isProjectSlug } from './projects';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'pt' },
@@ -13,6 +15,11 @@ export const routes: Routes = [
     children: [
       { path: '', component: Home },
       ...SECTIONS.map((section) => ({ path: section, component: SectionPage, data: { section } })),
+      {
+        path: 'projects/:slug',
+        canMatch: [(_route: unknown, segments: { path: string }[]) => isProjectSlug(segments[1]?.path)],
+        component: ProjectPage,
+      },
       { path: '404', component: NotFound },
       { path: '**', component: NotFound },
     ],

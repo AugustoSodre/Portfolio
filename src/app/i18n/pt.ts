@@ -91,6 +91,57 @@ export const pt = {
     games: 'Antes do código de produção vieram os jogos. Os que publiquei estão no itch.io.',
     gamesLink: { label: 'Ver no itch.io', href: 'https://gutoguerreiro.itch.io' },
   },
+  projects: {
+    linketinder: {
+      tagline: 'Plataforma de recrutamento que conecta candidatos e empresas por competências.',
+      summary:
+        'Backend em Groovy com API REST e CLI sobre a mesma camada de serviço, banco PostgreSQL normalizado e uma SPA em TypeScript.',
+      myPart: [
+        'Projeto solo: modelagem do banco, backend e frontend.',
+        'API REST e CLI em Groovy compartilhando os mesmos services.',
+        'PostgreSQL com 7 tabelas e scripts SQL versionados; testes com Spock usando H2 em memória.',
+        'SPA em TypeScript com validações em Chain of Responsibility.',
+      ],
+      limits: ['Frontend e backend ainda não estão integrados: compartilham o domínio, mas rodam separados.'],
+      team: [],
+    },
+    automatch: {
+      tagline: 'Plataforma que recomenda carros a partir de um quiz, com um modelo de deep learning de duas torres.',
+      summary:
+        'O usuário responde um quiz de 4 etapas no frontend Angular. O backend em Node.js envia o perfil e o catálogo para o motor de IA em PyTorch, que devolve um ranking com percentual de match.',
+      myPart: [
+        'Maior parte do frontend em Angular, junto com a Luana Lima.',
+        'Versão inicial do motor de recomendação two-tower em PyTorch; a versão final foi reescrita pelo Pedro Antonio.',
+      ],
+      limits: [],
+      team: [
+        { name: 'Lucas Moura', role: 'Maior parte do backend e integração com o motor de IA', href: 'https://github.com/LucMoura' },
+        { name: 'Ângelo Gaio', role: 'Backend' },
+        { name: 'Luana Lima', role: 'Frontend', href: 'https://github.com/luanafvl' },
+        { name: 'Pedro Antonio', role: 'Reescreveu o motor de IA da versão final', href: 'https://github.com/PedroAntn' },
+        { name: 'Sabrina Vianna', role: 'Design e documentação', href: 'https://github.com/LittleSabs' },
+        { name: 'Gustavo Fernandes', role: 'Design' },
+      ],
+    },
+    'web-crawler': {
+      tagline: 'Crawler em Groovy que coleta dados públicos da ANS sobre o padrão TISS, da saúde suplementar.',
+      summary:
+        'Baixa a documentação mais recente do padrão TISS, exporta para CSV o histórico de versões desde jan/2016 e baixa a tabela de erros de envio para a ANS.',
+      myPart: ['Projeto solo.'],
+      limits: [],
+      team: [],
+    },
+  },
+  projectsUi: {
+    howItWorks: 'Como funciona',
+    myPart: 'Minha parte',
+    stack: 'Stack',
+    links: 'Repositórios',
+    limits: 'Limitações',
+    team: 'Equipe',
+    open: 'Ver projeto',
+    all: 'Todos os projetos',
+  },
   contact: {
     intro: 'O jeito mais rápido de falar comigo é pelo LinkedIn.',
     location: 'Brasília, DF · Brasil',

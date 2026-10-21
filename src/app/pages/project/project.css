@@ -1,0 +1,99 @@
+.crumb {
+  display: inline-block;
+  margin-top: var(--space-5);
+  color: var(--muted);
+}
+
+h1 {
+  margin-top: var(--space-3);
+}
+
+.tagline {
+  margin-top: var(--space-3);
+  max-width: 50ch;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.rows {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.row {
+  display: grid;
+  gap: var(--space-2) var(--space-5);
+}
+
+@media (min-width: 48rem) {
+  .row {
+    grid-template-columns: 13rem 1fr;
+  }
+}
+
+.label {
+  color: var(--muted);
+  font-weight: 400;
+  padding-top: 0.2em;
+}
+
+.prose,
+.points {
+  max-width: 65ch;
+}
+
+.points,
+.team,
+.chips,
+.repos {
+  list-style: none;
+  padding: 0;
+}
+
+.points {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.points li {
+  padding-left: 1.25em;
+  text-indent: -1.25em;
+}
+
+.points li::before {
+  content: '— ';
+  color: var(--muted);
+}
+
+.team li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--space-3);
+  padding-block: var(--space-2);
+  border-bottom: 1px solid var(--line);
+  max-width: 44rem;
+}
+
+.team .role {
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chips li {
+  padding: 0.15em 0.6em;
+  border: 1px solid var(--line);
+}
+
+.repos {
+  display: grid;
+  gap: var(--space-2);
+  overflow-wrap: anywhere;
+}

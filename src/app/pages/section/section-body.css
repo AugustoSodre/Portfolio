@@ -156,3 +156,69 @@ img {
 .contact a:focus-visible .handle {
   color: var(--accent);
 }
+
+.projects {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.projects a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2) var(--space-4);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+  .projects a {
+    grid-template-columns: 3rem 1fr auto;
+    align-items: baseline;
+  }
+}
+
+.projects .num {
+  color: var(--muted);
+}
+
+.projects .body {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.projects .name {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  transition: color 180ms ease-out;
+}
+
+.projects .tagline {
+  max-width: 60ch;
+}
+
+.projects .stack,
+.projects .go {
+  color: var(--muted);
+}
+
+.projects .go {
+  grid-column: 2;
+}
+
+@media (min-width: 48rem) {
+  .projects .go {
+    grid-column: 3;
+  }
+}
+
+.projects a:hover .name,
+.projects a:focus-visible .name,
+.projects a:hover .go,
+.projects a:focus-visible .go {
+  color: var(--accent);
+}
