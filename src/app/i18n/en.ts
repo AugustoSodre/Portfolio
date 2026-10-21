@@ -14,6 +14,7 @@ export const en = {
   },
   langSwitch: { label: 'Português', target: 'pt' },
   resume: { label: 'Résumé', href: '/cv/augusto-lima-resume.pdf' },
+  newTab: '(opens in a new tab)',
   notFound: {
     title: 'Page not found',
     body: 'This address does not exist.',

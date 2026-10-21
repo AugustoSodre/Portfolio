@@ -30,7 +30,7 @@
         @for (member of text.team; track member.name) {
           <li>
             @if (member.href) {
-              <a [href]="member.href">{{ member.name }}</a>
+              <a [href]="member.href" target="_blank" rel="noopener">{{ member.name }}<span class="sr-only">{{ c.newTab }}</span></a>
             } @else {
               <span>{{ member.name }}</span>
             }
@@ -65,7 +65,7 @@
     <h2 class="label mono">{{ c.projectsUi.links }}</h2>
     <ul class="repos mono">
       @for (link of project.links; track link.href) {
-        <li><a [href]="link.href">{{ link.label }} ↗</a></li>
+        <li><a [href]="link.href" target="_blank" rel="noopener">{{ link.label }}<span class="sr-only">{{ c.newTab }}</span></a></li>
       }
     </ul>
   </section>

@@ -97,3 +97,17 @@ a:hover {
     transition: none !important;
   }
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Visible cue for links that open a new tab; the sr-only text inside says it to screen readers. */
+a[target='_blank']::after {
+  content: ' ↗' / '';
+}

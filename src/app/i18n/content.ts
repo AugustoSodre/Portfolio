@@ -30,6 +30,8 @@ export interface SiteContent {
   links: { linkedin: string; github: string };
   langSwitch: { label: string; target: Locale };
   resume: { label: string; href: string };
+  /** Screen-reader note on links that open a new tab. */
+  newTab: string;
   notFound: { title: string; body: string; home: string };
   nav: Record<Section, string>;
   sections: Record<Section, { title: string; description: string }>;

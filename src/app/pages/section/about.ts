@@ -26,7 +26,7 @@ import { SiteContent } from '../../i18n/content';
             </li>
           }
         </ul>
-        <a class="more mono" [href]="c().about.certsAll.href">{{ c().about.certsAll.label }} →</a>
+        <a class="more mono" [href]="c().about.certsAll.href" target="_blank" rel="noopener">{{ c().about.certsAll.label }}<span class="sr-only">{{ c().newTab }}</span></a>
       </div>
     </section>
 
@@ -34,7 +34,7 @@ import { SiteContent } from '../../i18n/content';
       <h2 class="when mono">{{ c().about.gamesHeading }}</h2>
       <div>
         <p>{{ c().about.games }}</p>
-        <a class="more mono" [href]="c().about.gamesLink.href">{{ c().about.gamesLink.label }} →</a>
+        <a class="more mono" [href]="c().about.gamesLink.href" target="_blank" rel="noopener">{{ c().about.gamesLink.label }}<span class="sr-only">{{ c().newTab }}</span></a>
       </div>
     </section>
   `,
