@@ -24,7 +24,7 @@ export class ProjectPage {
   private readonly heading = viewChild.required<ElementRef<HTMLElement>>('heading');
 
   constructor() {
-    setPageMeta(this.locale, `${this.project.name} · Augusto S. Lima`, this.text.tagline);
+    setPageMeta(this.locale, `${this.project.name} · Augusto S. Lima`, this.text.tagline, `projects/${this.project.slug}`);
     afterNextRender(() => this.heading().nativeElement.focus({ preventScroll: true }));
   }
 

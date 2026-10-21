@@ -15,7 +15,7 @@ export class Home {
   protected readonly c = CONTENT[this.locale];
 
   constructor() {
-    setPageMeta(this.locale, this.c.meta.title, this.c.meta.description);
+    setPageMeta(this.locale, this.c.meta.title, this.c.meta.description, '');
     // Escape on a section page comes back here with that entry focused.
     const host = inject<ElementRef<HTMLElement>>(ElementRef).nativeElement;
     afterNextRender(() => {

@@ -25,7 +25,7 @@ export class SectionPage {
 
   constructor() {
     const meta = this.c.sections[this.section];
-    setPageMeta(this.locale, meta.title, meta.description);
+    setPageMeta(this.locale, meta.title, meta.description, this.section);
     // Move focus to the new page so screen readers announce it after a menu navigation.
     afterNextRender(() => this.heading().nativeElement.focus({ preventScroll: true }));
   }
