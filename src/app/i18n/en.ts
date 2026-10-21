@@ -26,4 +26,78 @@ export const en = {
     contact: { title: 'Contact · Augusto S. Lima', description: 'How to reach Augusto S. Lima.' },
   },
   menu: { label: 'Main menu', back: 'Esc · back' },
+  experience: {
+    roles: [
+      {
+        period: 'Mar 2026 → present',
+        title: 'Software Developer (intern)',
+        org: 'ZG Soluções',
+        mode: 'Remote',
+        points: [
+          'Full stack on ZG Repasse: Angular on the front end, Groovy + Micronaut on the back end, event-driven microservices with Kafka.',
+          'Business rules in approval workflows, audited through Kafka events.',
+          'Userflow integration for in-app onboarding.',
+          'PostgreSQL with Liquibase migrations and zero-downtime deploys.',
+          'Testing with Spock (unit, integration and API); quality with CodeNarc, JaCoCo and code review.',
+          'Generative AI in daily work (Claude Code, Gemini): SDD, TDD, multiple agents, ticket specs and code review.',
+          'Scrum, from ticket refinement to code review.',
+        ],
+      },
+      {
+        period: 'Aug 2025 → Feb 2026',
+        title: 'Trainee Developer',
+        org: 'AceleraZG 8.0 · ZG Soluções',
+        highlight: 'Selected among 2,000+ applicants (Top 24) and hired at the end (Top 5).',
+        points: [
+          'MVP of a hospital product in an agile squad.',
+          'Legacy code refactoring: Angular on the front end, Grails + Kafka + Spock on the back end.',
+          'Microservices, Swagger documentation and Git Flow.',
+        ],
+      },
+      {
+        period: 'Feb 2024 → Jul 2025',
+        title: 'Lab and Programming Teaching Assistant',
+        org: 'UniCEUB',
+        points: [
+          'Digital inclusion classes for seniors: Office, online safety, fake news and an introduction to LLMs.',
+          'PHP, SQL and HTML/CSS workshop for 15 students, 100% completion.',
+          'Introduction to C for 35 first-year students.',
+        ],
+      },
+    ],
+    educationHeading: 'Education',
+    education: {
+      course: 'B.Sc. in Computer Science',
+      school: 'UniCEUB',
+      period: 'Feb 2024 → Dec 2027 (expected)',
+    },
+  },
+  about: {
+    photoAlt: 'Augusto smiling, wearing glasses',
+    story: [
+      "I'm a full stack developer in Brasília, Brazil. I work at ZG Soluções with Angular, Groovy, Micronaut, Kafka and PostgreSQL, and I study Computer Science at UniCEUB.",
+      "I've been programming since I was 12, when I started making games in Godot.",
+      '改善 (kaizen) means continuous improvement. It is the idea behind this portfolio and how I work.',
+    ],
+    certsHeading: 'Featured certificates',
+    certs: [
+      { name: 'AceleraZG', year: '2026' },
+      { name: 'Kafka Training' },
+      { name: 'Angular Training' },
+      { name: 'Harvard CS50x', year: '2024' },
+    ],
+    certsAll: { label: 'All certificates on LinkedIn', href: 'https://www.linkedin.com/in/augusto-s-lima-8167352a6/details/certifications/' },
+    gamesHeading: 'Games',
+    games: 'Before production code there were games. The ones I published are on itch.io.',
+    gamesLink: { label: 'See on itch.io', href: 'https://gutoguerreiro.itch.io' },
+  },
+  contact: {
+    intro: 'The fastest way to reach me is LinkedIn.',
+    location: 'Brasília, DF · Brazil',
+    links: [
+      { label: 'LinkedIn', handle: 'augusto-s-lima', href: 'https://www.linkedin.com/in/augusto-s-lima-8167352a6' },
+      { label: 'GitHub', handle: 'AugustoSodre', href: 'https://github.com/AugustoSodre' },
+      { label: 'itch.io', handle: 'gutoguerreiro', href: 'https://gutoguerreiro.itch.io' },
+    ],
+  },
 } satisfies SiteContent;

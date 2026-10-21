@@ -1,0 +1,158 @@
+/* Shared Swiss grid for section bodies: label column + content column. */
+:host {
+  display: grid;
+  gap: var(--space-6);
+  margin-top: var(--space-5);
+}
+
+.roles,
+.points,
+.certs,
+.contact {
+  list-style: none;
+  padding: 0;
+}
+
+.roles {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.row {
+  display: grid;
+  gap: var(--space-2) var(--space-5);
+}
+
+@media (min-width: 48rem) {
+  .row {
+    grid-template-columns: 13rem 1fr;
+  }
+}
+
+.when {
+  color: var(--muted);
+  font-weight: 400;
+  padding-top: 0.35em;
+}
+
+h2:not(.when) {
+  font-size: clamp(1.375rem, 3vw, 1.875rem);
+  line-height: 1.2;
+}
+
+.org {
+  margin-top: var(--space-1);
+  font-weight: 600;
+}
+
+.mode,
+.period {
+  color: var(--muted);
+}
+
+.highlight {
+  margin-top: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.points {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  max-width: 65ch;
+}
+
+.points li {
+  padding-left: 1.25em;
+  text-indent: -1.25em;
+}
+
+.points li::before {
+  content: '— ';
+  color: var(--muted);
+}
+
+.course {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.about {
+  display: grid;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+@media (min-width: 48rem) {
+  .about {
+    grid-template-columns: 18rem 1fr;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 18rem;
+  height: auto;
+  background: var(--line);
+  filter: grayscale(1) contrast(1.05);
+}
+
+.story {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 60ch;
+  font-size: 1.125rem;
+}
+
+.certs li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block: var(--space-2);
+  border-bottom: 1px solid var(--line);
+  max-width: 36rem;
+}
+
+.year {
+  color: var(--muted);
+}
+
+.more {
+  display: inline-block;
+  margin-top: var(--space-3);
+}
+
+.lead {
+  font-size: 1.25rem;
+  max-width: 50ch;
+}
+
+.contact a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--space-3);
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.big {
+  font-size: clamp(2rem, 7vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.handle {
+  color: var(--muted);
+}
+
+.contact a:hover .handle,
+.contact a:focus-visible .handle {
+  color: var(--accent);
+}

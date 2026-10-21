@@ -4,3 +4,14 @@
   <p class="hint mono" aria-hidden="true">{{ c.menu.back }}</p>
 </header>
 <h1 #heading tabindex="-1">{{ c.nav[section] }}</h1>
+@switch (section) {
+  @case ('experience') {
+    <app-experience [c]="c" />
+  }
+  @case ('about') {
+    <app-about [c]="c" />
+  }
+  @case ('contact') {
+    <app-contact [c]="c" />
+  }
+}

@@ -4,10 +4,13 @@ import { CONTENT, routeLocale } from '../../i18n/content';
 import { setPageMeta } from '../../i18n/page-meta';
 import { Section } from '../../sections';
 import { Menu } from '../../ui/menu/menu';
+import { About } from './about';
+import { Contact } from './contact';
+import { Experience } from './experience';
 
 @Component({
   selector: 'app-section',
-  imports: [Menu, RouterLink],
+  imports: [Menu, RouterLink, Experience, About, Contact],
   templateUrl: './section.html',
   styleUrl: './section.css',
   host: { '(document:keydown.escape)': 'back($event)' },
