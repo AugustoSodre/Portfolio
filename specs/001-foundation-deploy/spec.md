@@ -4,7 +4,7 @@
 
 **Created**: 2026-10-21
 
-**Status**: Draft
+**Status**: Done (live at https://augustolima.pages.dev)
 
 **Input**: User description: "Replace the 2024 static site with a new app shell: visual identity from the LinkedIn banner, Portuguese and English versions of every page, every page delivered as ready-made HTML, and a free hosting pipeline with a preview link per branch. Ship a minimal placeholder home so the pipeline is proven before real content."
 

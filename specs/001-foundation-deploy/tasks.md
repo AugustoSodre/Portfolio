@@ -31,8 +31,8 @@
 
 ## Phase 5: User Story 3 - Preview deploys (P3)
 
-- [ ] T014 [US3] Owner connects repo on Cloudflare Pages (build `npm run build`, output `dist/portfolio/browser`, prod branch `main`) — guided, owner-only
-- [ ] T015 [US3] Push `redesign`, verify preview against quickstart.md step 4
+- [x] T014 [US3] Owner connects repo on Cloudflare Pages (build `npm run build`, output `dist/portfolio/browser`, prod branch `main`) — guided, owner-only
+- [x] T015 [US3] Push `redesign`, verify preview against quickstart.md step 4
 
 ## Phase 6: Polish
 
