@@ -1,0 +1,6 @@
+<header class="top">
+  <a class="home" [routerLink]="['/', locale]">{{ c.name }}</a>
+  <app-menu [locale]="locale" variant="compact" [current]="section" />
+  <p class="hint mono" aria-hidden="true">{{ c.menu.back }}</p>
+</header>
+<h1 #heading tabindex="-1">{{ c.nav[section] }}</h1>

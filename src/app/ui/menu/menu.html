@@ -1,0 +1,15 @@
+<nav [attr.aria-label]="c().menu.label" (keydown)="onKey($event)">
+  <ol>
+    @for (section of sections; track section; let i = $index) {
+      <li [style.--i]="i">
+        <a
+          [routerLink]="['/', locale(), section]"
+          [attr.aria-current]="section === current() ? 'page' : null"
+        >
+          <span class="num mono" aria-hidden="true">0{{ i + 1 }}</span>
+          <span class="label">{{ c().nav[section] }}</span>
+        </a>
+      </li>
+    }
+  </ol>
+</nav>

@@ -67,3 +67,33 @@ a:hover {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* Diagonal wipe between pages (router View Transitions). */
+::view-transition-old(root) {
+  animation: none;
+}
+
+::view-transition-new(root) {
+  animation: wipe-in 350ms cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@keyframes wipe-in {
+  from {
+    clip-path: polygon(0 0, 0 0, -30% 100%, -30% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 130% 0, 100% 100%, -30% 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after,
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+    transition: none !important;
+  }
+}

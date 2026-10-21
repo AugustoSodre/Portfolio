@@ -1,0 +1,40 @@
+:host {
+  display: block;
+  padding-block: var(--space-6);
+}
+
+.top {
+  display: grid;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--line);
+}
+
+.home {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.hint {
+  color: var(--muted);
+}
+
+h1 {
+  margin-top: var(--space-5);
+  font-size: clamp(2.5rem, 9vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+h1:focus {
+  outline: none;
+}
+
+/* No Escape key on touch devices. */
+@media (hover: none) {
+  .hint {
+    display: none;
+  }
+}
