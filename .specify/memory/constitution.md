@@ -35,7 +35,7 @@ build. No backend, no forms, no CMS.
 
 ## Design and Technology Constraints
 
-- Angular (current major), standalone components, static prerender (`outputMode: 'static'`).
+- Angular 21 (newest major the Cloudflare Pages build image can run; Angular 22 needs Node ≥ 24.15), standalone components, static prerender (`outputMode: 'static'`).
 - Locales: `/pt/...` (default) and `/en/...`; `/` redirects to `/pt/`.
 - Visual tokens shared with the LinkedIn banner: background `#0a0c10`, accent `#10b981`;
   Playfair Display for the owner's name only, Inter for text, JetBrains Mono for technical
@@ -61,4 +61,4 @@ with a version bump (MAJOR: principle removed or redefined; MINOR: principle or 
 PATCH: wording) and noted in the commit message. Every spec and plan checks itself against these
 principles; any violation is justified in the plan's Complexity Tracking or removed.
 
-**Version**: 1.0.0 | **Ratified**: 2026-10-21 | **Last Amended**: 2026-10-21
+**Version**: 1.0.1 | **Ratified**: 2026-10-21 | **Last Amended**: 2026-10-21

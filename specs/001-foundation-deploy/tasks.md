@@ -7,7 +7,7 @@
 ## Phase 1: Setup
 
 - [x] T001 Remove 2024 site files (`index.html`, `about.html`, `style.css`, `Assets/`) from repo root
-- [x] T002 Scaffold Angular 22 (`--ssr --zoneless --style=css --test-runner=vitest`, project `portfolio`) in scratch and move into repo root; add `.nvmrc` = `24`
+- [x] T002 Scaffold Angular 21 (`--ssr --zoneless --style=css --test-runner=vitest`, project `portfolio`) in scratch and move into repo root; add `.nvmrc` = `24`
 - [x] T003 Set `outputMode: "static"` in `angular.json`; strip the generated Express server entry
 
 ## Phase 2: Foundational

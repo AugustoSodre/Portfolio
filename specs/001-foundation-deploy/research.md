@@ -1,9 +1,12 @@
 # Research: Foundation and Deploy Pipeline
 
 ## Angular version and Node
-- **Decision**: Angular 22.2 with Node 24 LTS pinned in `.nvmrc`.
-- **Rationale**: Current major; CLI 22 requires Node ≥ 22.22.3. Cloudflare Pages honors `.nvmrc`.
-- **Alternatives**: Angular 20 (works on the local Node 22.17) rejected: constitution says current major.
+- **Decision**: Angular 21.2 with `.nvmrc` = `24`.
+- **Rationale**: Angular 22 was tried first, but it needs Node ≥ 24.15 and Cloudflare's build image
+  resolves `24` to 24.13.1 and has no definition for newer 24.x (`node-build: definition not
+  found: 24.22.1`). Angular 21 accepts Node ≥ 24.0.
+- **Alternatives**: Angular 22 built in GitHub Actions and uploaded with wrangler, rejected: needs
+  an API token secret and gives up Cloudflare's per-branch previews from the Git integration.
 
 ## Static output
 - **Decision**: `ng new --ssr`, then `outputMode: "static"` and `RenderMode.Prerender` for all

@@ -6,16 +6,16 @@
 
 ## Summary
 
-Scaffold an Angular 22 workspace at the repo root (replacing the 2024 HTML/CSS), with static
+Scaffold an Angular 21 workspace at the repo root (replacing the 2024 HTML/CSS), with static
 prerender for `/pt` and `/en`, banner design tokens as CSS custom properties, typed per-locale
 content, a language switch, localized not-found pages, and a Cloudflare Pages pipeline (preview
 per branch, production from `main`).
 
 ## Technical Context
 
-**Language/Version**: TypeScript (Angular 22.2), Node 24 LTS (`.nvmrc`)
+**Language/Version**: TypeScript (Angular 21.2), Node 24 LTS (`.nvmrc`)
 
-**Primary Dependencies**: `@angular/*` 22.2, `@angular/ssr` (prerender only). Nothing else.
+**Primary Dependencies**: `@angular/*` 21.2, `@angular/ssr` (prerender only). Nothing else.
 
 **Storage**: N/A (content is TypeScript)
 
