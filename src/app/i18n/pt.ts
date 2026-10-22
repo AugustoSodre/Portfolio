@@ -122,7 +122,7 @@ export const pt = {
         { name: 'Luana Lima', role: 'Frontend', href: 'https://github.com/luanafvl' },
         { name: 'Pedro Antonio', role: 'Reescreveu o motor de IA da versão final', href: 'https://github.com/PedroAntn' },
         { name: 'Sabrina Vianna', role: 'Design e documentação', href: 'https://github.com/LittleSabs' },
-        { name: 'Gustavo Fernandes', role: 'Design' },
+        { name: 'Gustavo Fernandes', role: 'Design', href: 'https://github.com/gustavolimaf' },
       ],
     },
     'web-crawler': {
