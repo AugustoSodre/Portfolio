@@ -112,6 +112,7 @@ export const en = {
       summary:
         'The user answers a 4-step quiz in the Angular front end. The Node.js back end sends the profile and the catalog to the PyTorch AI engine, which returns a ranking with a match percentage.',
       myPart: [
+        'Managed the 7-person team.',
         'Most of the Angular front end.',
         'Initial version of the PyTorch two-tower recommendation engine; Pedro Antonio rewrote it for the final version.',
       ],
