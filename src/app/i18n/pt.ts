@@ -118,7 +118,7 @@ export const pt = {
       limits: [],
       team: [
         { name: 'Lucas Moura', role: 'Maior parte do backend e integração com o motor de IA', href: 'https://github.com/LucMoura' },
-        { name: 'Ângelo Gaio', role: 'Backend' },
+        { name: 'Ângelo Gaio', role: 'Backend', href: 'https://github.com/awangelo' },
         { name: 'Luana Lima', role: 'Frontend', href: 'https://github.com/luanafvl' },
         { name: 'Pedro Antonio', role: 'Reescreveu o motor de IA da versão final', href: 'https://github.com/PedroAntn' },
         { name: 'Sabrina Vianna', role: 'Design e documentação', href: 'https://github.com/LittleSabs' },
@@ -132,6 +132,21 @@ export const pt = {
       myPart: ['Projeto solo.'],
       limits: [],
       team: [],
+    },
+    'gestor-eventos': {
+      tagline: 'Sistema web em Django para eventos acadêmicos: inscrições, presença e certificados em PDF.',
+      summary:
+        'Organizadores cadastram eventos, alunos e professores se inscrevem e têm a presença registrada, e o sistema emite os certificados em PDF. O acesso é separado por perfil (admin, organizador, professor e aluno), com uma API REST e um log de auditoria das ações.',
+      myPart: [
+        'Desenvolvimento full stack em equipe de três, em pair programming.',
+        'Ferramentas de IA integradas ao fluxo de desenvolvimento, com a equipe conduzindo e revisando as iterações em conjunto.',
+        'Documentação técnica (casos de uso, diagrama entidade-relacionamento e documentação formal) e script de carga de dados de exemplo.',
+      ],
+      limits: [],
+      team: [
+        { name: 'Ângelo Gaio', role: 'Full stack', href: 'https://github.com/awangelo' },
+        { name: 'Luana Lima', role: 'Full stack', href: 'https://github.com/luanafvl' },
+      ],
     },
   },
   projectsUi: {

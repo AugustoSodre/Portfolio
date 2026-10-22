@@ -118,7 +118,7 @@ export const en = {
       limits: [],
       team: [
         { name: 'Lucas Moura', role: 'Most of the back end and the AI engine integration', href: 'https://github.com/LucMoura' },
-        { name: 'Ângelo Gaio', role: 'Back end' },
+        { name: 'Ângelo Gaio', role: 'Back end', href: 'https://github.com/awangelo' },
         { name: 'Luana Lima', role: 'Front end', href: 'https://github.com/luanafvl' },
         { name: 'Pedro Antonio', role: 'Rewrote the AI engine for the final version', href: 'https://github.com/PedroAntn' },
         { name: 'Sabrina Vianna', role: 'Design and documentation', href: 'https://github.com/LittleSabs' },
@@ -132,6 +132,21 @@ export const en = {
       myPart: ['Solo project.'],
       limits: [],
       team: [],
+    },
+    'gestor-eventos': {
+      tagline: 'Django web app for academic events: registrations, attendance and PDF certificates.',
+      summary:
+        'Organizers create events, students and professors register and have their attendance recorded, and the system issues PDF certificates. Access is split by role (admin, organizer, professor and student), with a REST API and an audit log of actions.',
+      myPart: [
+        'Full stack development in a team of three, using pair programming.',
+        'AI tools built into the development workflow, with the team driving and reviewing each iteration together.',
+        'Technical documentation (use cases, entity-relationship diagram and formal documentation) and a sample data seeding script.',
+      ],
+      limits: [],
+      team: [
+        { name: 'Ângelo Gaio', role: 'Full stack', href: 'https://github.com/awangelo' },
+        { name: 'Luana Lima', role: 'Full stack', href: 'https://github.com/luanafvl' },
+      ],
     },
   },
   projectsUi: {

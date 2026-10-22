@@ -2,11 +2,11 @@ import { PROJECTS, isProjectSlug, projectRouteParams } from './projects';
 
 describe('projects', () => {
   it('lists projects in the agreed order', () => {
-    expect(PROJECTS.map((p) => p.slug)).toEqual(['linketinder', 'automatch', 'web-crawler']);
+    expect(PROJECTS.map((p) => p.slug)).toEqual(['linketinder', 'automatch', 'web-crawler', 'gestor-eventos']);
   });
 
   it('prerenders every locale × project', () => {
-    expect(projectRouteParams()).toHaveLength(6);
+    expect(projectRouteParams()).toHaveLength(8);
     expect(projectRouteParams()).toContainEqual({ lang: 'en', slug: 'web-crawler' });
   });
 

@@ -27,6 +27,12 @@ export const PROJECTS = [
     stack: ['Groovy', 'Jsoup', 'HTTPBuilder-NG', 'OpenCSV', 'Gradle'],
     links: [{ label: 'Web-Crawler', href: 'https://github.com/AugustoSodre/Web-Crawler' }],
   },
+  {
+    slug: 'gestor-eventos',
+    name: 'Gestor de Eventos',
+    stack: ['Python', 'Django', 'Django REST Framework', 'SQLite', 'fpdf2', 'HTML/CSS'],
+    links: [{ label: 'gestor-eventos', href: 'https://github.com/awangelo/gestor-eventos' }],
+  },
 ] as const;
 
 export type ProjectSlug = (typeof PROJECTS)[number]['slug'];
