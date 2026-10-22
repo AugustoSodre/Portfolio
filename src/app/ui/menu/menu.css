@@ -57,9 +57,12 @@ a[aria-current='page'] .num {
 :host(.full) .label {
   font-size: clamp(2.5rem, 10vw, 6.5rem);
   font-weight: 700;
-  line-height: 1.05;
+  /* Tall enough that accents (Ê) stay inside the slab. */
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  /* Clears the slab's skewed bottom-right corner; em here is the big label size. */
+  padding-right: 0.2em;
 }
 
 :host(.full) a:hover,
